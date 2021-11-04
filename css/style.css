@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 1200px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.abs{
+    position: absolute;
+}
+
+.jumbo-container{
+    width: 100%;    
+    height: 50vh;
+}
+
+.jumbotron{
+    background: url(../img/jumbo.png);
+    background-size: cover;
+    height: 100%;
+}
+
+.nav-container{
+    position: relative;
+    height: 60px;
+    width: 800px;
+    margin: 0 auto;
+}
+
+.ds-logo{
+    top: 12px;
+    line-height: 60px;
+}
+.nav-container ul{
+    left: 250px;
+    line-height: 60px;
+}
+.nav-container ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 11px;
+    color: white;
+    text-align: center;
+}
+
+.w-button{
+    background: white;
+}
+
+.w-button, small{
+    top: 15px;
+    left: 740px;
+    padding: 8px;
+    border-radius: 15px;
+    font-size: 11px;
+}
+
+.jumbo-content{
+    border: 1px black solid;
+    width: 800px;
+    height: 390px;
+    margin: 0 auto;
+}
+
+
