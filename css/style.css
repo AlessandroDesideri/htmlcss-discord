@@ -9,9 +9,11 @@
     width: 1200px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
 .fl{
     float: left;
 }
+
 .fl::after{
     content: "";
     display: table;
@@ -57,16 +59,38 @@
     text-align: center;
 }
 
+.nav-container ul li:hover{
+    text-decoration: underline;
+}
+
 .w-button{
     background: white;
     color: black;
     border-radius: 15px;
 }
 
-.b-button{
+.w-button:hover{
+    text-decoration: underline;
+}
+
+.black-button{
     background: #23272A;
     color: white;
     border-radius: 15px;
+}
+
+.black-button:hover{
+    text-decoration: underline;
+}
+
+.blue-button{
+    background: #89A2E6;
+    color: white;
+    border-radius: 25px;
+}
+
+.blue-button:hover{
+    text-decoration: underline;
 }
 .small{
     top: 15px;
@@ -90,7 +114,7 @@
     top: 60px
 }
 
-.jumbo-text h1{
+.jumbo-text, h2{
     margin-bottom: 30px;
 }
 
@@ -112,9 +136,82 @@
     text-align: center;
 }
 
-.jumbo-buttons .b-button{
+.jumbo-buttons .black-button{
     left: 250px;
     width: 220px;
     padding: 10px 20px;
     text-align: center;
+}
+
+.section{
+    width: 1200px;
+    height: 600px;
+    padding: 100px 100px;
+    position: relative;
+}
+
+.grey-section{
+    background: #F6F6F6;
+}
+
+.big-section{
+    height: 1100px;
+}
+
+.img-section img{
+    width: 600px;
+}
+
+.img-section .centered-img{
+    width: 1000px;
+    left: 100px;
+    top: 230px;
+}
+
+.text-section{
+    width: 400px;
+    margin: 0 auto;
+}
+
+.text-section h2{
+    font-size: 40px;
+}
+
+.text-section p{
+    line-height: 25px;
+}
+
+.centered-text h2{
+    text-align: center;
+    width: 1000px;
+}
+
+.centered-text p{
+    text-align: center;
+    width: 900px;
+    padding-left: 80px;
+}
+
+.star{
+    background-size: cover;
+    bottom: 200px;
+    left: 350px;
+}
+
+.star h2{
+    left: 50px;
+    font-size: 25px;
+}
+
+.star .blue-button{
+    position: absolute;
+    top: 110px;
+    left: 150px;
+    padding: 15px;
+    width: 200px;
+    padding-left: 30px;
+}
+footer{
+    position: relative;
+    background: #22272A;
 }
