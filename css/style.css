@@ -9,6 +9,14 @@
     width: 1200px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+.fl{
+    float: left;
+}
+.fl::after{
+    content: "";
+    display: table;
+    clear: both;
+}
 
 .abs{
     position: absolute;
@@ -16,7 +24,7 @@
 
 .jumbo-container{
     width: 100%;    
-    height: 50vh;
+    height: 450px;
 }
 
 .jumbotron{
@@ -51,21 +59,62 @@
 
 .w-button{
     background: white;
+    color: black;
+    border-radius: 15px;
 }
 
-.w-button, small{
+.b-button{
+    background: #23272A;
+    color: white;
+    border-radius: 15px;
+}
+.small{
     top: 15px;
+    font-size: 11px;
+}
+.w-button, small{
     left: 740px;
     padding: 8px;
-    border-radius: 15px;
-    font-size: 11px;
 }
 
 .jumbo-content{
-    border: 1px black solid;
-    width: 800px;
+    position: relative;
+    width: 500px;
     height: 390px;
     margin: 0 auto;
 }
 
+.jumbo-text{
+    color: white;
+    text-align: center;
+    top: 60px
+}
 
+.jumbo-text h1{
+    margin-bottom: 30px;
+}
+
+.jumbo-text p{
+    line-height: 25px;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.jumbo-buttons{
+    bottom: 180px;
+    font-size: 13px;
+}
+
+.jumbo-buttons .w-button{
+    left: 80px;
+    padding: 10px 20px;
+    width: 150px;
+    text-align: center;
+}
+
+.jumbo-buttons .b-button{
+    left: 250px;
+    width: 220px;
+    padding: 10px 20px;
+    text-align: center;
+}
